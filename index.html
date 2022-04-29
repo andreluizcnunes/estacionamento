@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Estacionamento</title>
+</head>
+<body>
+  <header>
+    <h1>Sistema de Estacionamento</h1>
+  </header>
+  <main>
+
+    <div class="form-veiculos">
+      
+      <input 
+        type="text" 
+        id="modelCar" 
+        placeholder="Digite o modelo do carro" 
+        autocomplete="off"
+      >
+  
+      <input type="text" 
+        id="placaCar" 
+        placeholder="Digite a placa do carro" 
+        autocomplete="off"
+      >
+
+    </div>
+
+    <div class="form-botao">
+      
+      <button id="addcar">Adicionar</button>
+
+    </div>
+
+    <div class="tablecar">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Placa</th>
+            <th>Entrada</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="tablepatio"></tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
